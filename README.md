@@ -1,5 +1,7 @@
 # 🏠 US Household Income SQL Project
 
+# 🏠 US Household Income SQL Project
+
 ## Overview
 This project analyzes U.S. household income data using SQL. It is organized into two main phases:
 
@@ -44,23 +46,59 @@ Make sure to load these datasets into your SQL database before running the scrip
 
 ## Project Structure
 
-## Project Structure
-
 us-household-income-project/
 │
-├── data/                  # CSV dataset files
+├── data/                   # CSV dataset files
 │   ├── USHouseholdIncome_Statistics.csv
 │   └── USHouseholdIncome.csv
 │
-├── scripts/               # SQL scripts
+├── scripts/                # SQL scripts
 │   ├── data_cleaning.sql
 │   └── analysis_queries.sql
 │
-└── README.md              # Project documentation
+└── README.md               # Project documentation
 
+---
 
+## Phase 1 — Data Cleaning
+
+The `scripts/data_cleaning.sql` script includes:
+
+- Inspecting raw data and record counts.
+- Identifying and removing duplicate rows by `id`.
+- Correcting inconsistent state names (e.g., `georia` → `Georgia`).
+- Fixing inconsistent place types (e.g., `Boroughs` → `Borough`).
+- Filling missing place names where possible.
+- Checking and flagging suspicious land and water area values.
+
+---
+
+## Phase 2 — Data Analysis
+
+The `scripts/analysis_queries.sql` script includes:
+
+- Counting unique cities and counties per state.
+- Listing largest cities by land area.
+- Finding states with highest income variability (standard deviation).
+- Analyzing income gaps (mean vs median).
+- Ranking top 3 largest cities per state.
+- Identifying states with above-average mean income.
+- Calculating state-level average income statistics.
+
+---
+
+## How to Use
+
+1. Import the CSV files from the `data/` folder into your SQL database.
+2. Run `scripts/data_cleaning.sql` to clean and prepare the data.
+3. Run `scripts/analysis_queries.sql` to perform the analysis.
+4. Export or visualize results using tools like Tableau or Power BI if desired.
+
+---
 
 ## Author
 
-Hasan Cil  
+**Hasan Cil**  
 [GitHub Profile](https://github.com/hasancil41)
+
+
