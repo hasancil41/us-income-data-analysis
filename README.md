@@ -1,7 +1,5 @@
 # 🏠 US Household Income SQL Project
 
-# 🏠 US Household Income SQL Project
-
 ## Overview
 This project analyzes U.S. household income data using SQL. It is organized into two main phases:
 
