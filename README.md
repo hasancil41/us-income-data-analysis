@@ -44,17 +44,20 @@ Make sure to load these datasets into your SQL database before running the scrip
 
 ## Project Structure
 
+## Project Structure
+
 us-household-income-project/
 │
-├── data/
-│   ├── USHouseholdIncome_Statistics.csv     # Income stats dataset CSV
-│   └── USHouseholdIncome.csv                 # Geographic and demographic dataset CSV
+├── data/                  # CSV dataset files
+│   ├── USHouseholdIncome_Statistics.csv
+│   └── USHouseholdIncome.csv
 │
-├── scripts/
-│   ├── data_cleaning.sql                     # SQL queries for cleaning data
-│   └── analysis_queries.sql                  # SQL queries for analysis
+├── scripts/               # SQL scripts
+│   ├── data_cleaning.sql
+│   └── analysis_queries.sql
 │
-└── README.md                                # This project documentation file
+└── README.md              # Project documentation
+
 
 
 ## Author
